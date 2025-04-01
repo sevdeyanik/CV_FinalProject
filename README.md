@@ -1,5 +1,5 @@
 # CV_FinalProject
-Computer Vision Final Project 2025 Group 9 - Sevde Yanik, Sarp Tan Gecim
+Computer Vision Final Project 2025 Group 9
 
 # CycleGAN for Monet Style Transfer
 
@@ -9,6 +9,31 @@ This project applies CycleGAN for unpaired image-to-image translation between re
 
 ## 📁 Project Structure
 
+```
+├── checkpoints/                    # Saved model weights
+├── datasets/                      # Monet2Photo dataset
+│   └── monet2photo/
+├── generated_images/             # Generated outputs for each model
+│   ├── Model_1_Photo_To_Monet/
+│   └── ...
+├── models/                       # Model architectures and dataset classes
+│   ├── Model.py
+│   ├── Model6.py
+│   ├── MonetPhotoDataset.py
+│   └── MonetPhotoDatasetGridcropping.py
+├── trains/                       # Training scripts
+│   ├── train.py
+│   ├── train_model1.py
+│   └── train_model2.py
+├── experiments/                  # Evaluation and inference scripts
+│   ├── TestSimple.py
+│   ├── TestAllModelsMonetToPhoto.py
+│   ├── TestAllModelsPhotoToMonet.py
+│   └── TestAllModelsFIDAndSSIM.py
+└── report/                       # Final report
+```
+
+---
 ---
 
 ## 🔍 Objective
@@ -27,3 +52,28 @@ This project applies CycleGAN for unpaired image-to-image translation between re
 
 ```bash
 pip install torch torchvision clean-fid scikit-image matplotlib
+```
+---
+
+## 🖼️ Visual Examples
+
+See `report/` for side-by-side comparison figures:
+- Monet → Photo
+- Photo → Monet
+
+---
+
+## 📚 References
+
+- CycleGAN: [https://arxiv.org/abs/1703.10593](https://arxiv.org/abs/1703.10593)
+- Johnson et al.: [https://arxiv.org/abs/1603.08155](https://arxiv.org/abs/1603.08155)
+
+---
+
+## ✍️ Authors
+
+- **Sevde Yanik** — Data & Computer Science
+- **Sarp Tan Gecim** — Physics
+
+University of Heidelberg — Computer Vision Project (Group 09)
+
